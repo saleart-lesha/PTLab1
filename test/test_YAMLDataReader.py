@@ -29,7 +29,9 @@ class TestYAMLDataReader:
         return yaml_text, data
 
     @pytest.fixture()
-    def yaml_filepath_and_data(self, yaml_content_and_data: tuple[str, DataType], tmpdir) -> tuple[str, DataType]:
+    def yaml_filepath_and_data(self, yaml_content_and_data:
+                               tuple[str, DataType], tmpdir) \
+            -> tuple[str, DataType]:
         p = tmpdir.mkdir("datadir").join("my_data.yaml")
         p.write_text(yaml_content_and_data[0], encoding='utf-8')
         return str(p), yaml_content_and_data[1]

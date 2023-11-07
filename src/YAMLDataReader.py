@@ -11,6 +11,7 @@ class YAMLDataReader(DataReader):
             for entry in yaml_data:
                 if isinstance(entry, dict):
                     for name, subjects in entry.items():
-                        scores = [(subj, score) for subj, score in subjects.items()]
+                        scores = [(subj, score)
+                                  for subj, score in subjects.items()]
                         data[name] = scores
         return data
