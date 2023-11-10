@@ -1,5 +1,6 @@
 import argparse
 import sys
+import os
 
 from CalcRating import CalcRating
 from TextDataReader import TextDataReader
