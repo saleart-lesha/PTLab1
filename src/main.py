@@ -5,6 +5,7 @@ from CalcRating import CalcRating
 from TextDataReader import TextDataReader
 from StudentCalculator import StudentCalculator
 from YAMLDataReader import YAMLDataReader
+from DataReader import DataReader
 
 
 def get_path_from_arguments(args) -> str:
